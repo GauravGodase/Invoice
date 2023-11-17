@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import InvoiceForm from './components/InvoiceForm';
+import InvoiceList from './components/InvoiceList';
+// import InvoiceDetails from './components/InvoiceDetails'; 
 import './App.css';
+import InvoiceDetailsWrapper from './components/InvoiceDetailsWrapper'; 
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <h1 className='title'> Invoice</h1>
+        <Routes>
+          <Route path="/" element={<InvoiceForm />} />
+          <Route path="/invoice-list" element={<InvoiceList />} />
+          <Route path="/invoice/:id" element={<InvoiceDetailsWrapper />} /> 
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

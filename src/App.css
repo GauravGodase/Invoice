@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+
+.title {
+  color: #40a2e4;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

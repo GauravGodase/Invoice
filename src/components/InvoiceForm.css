@@ -1,0 +1,150 @@
+
+.invoice-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f7f7;
+ 
+}
+
+.invoice-form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.invoice-form-container input,
+.invoice-form-container textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+/* .ReactRadioButton {
+  display: inline-block;
+  margin-right: 10px;
+} */
+
+.payment {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.payment:hover,
+.payment:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+
+.status-dropdown{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.status-dropdown:hover,
+.status-dropdown:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.time{
+  display: flex;
+  align-items: center;
+}
+
+.timeInput{
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* button */
+.resetButton {
+  background-color: #2e6de3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.createButton {
+  background-color: rgb(32, 220, 66);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 22px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.radioButton{
+  display: flex;
+  flex-direction: column;
+}
+
+.radioButton .ant-radio-input {
+  margin-right: 6px;
+}
+.radioButton:hover {
+  background-color: #fdfbfb;
+}
+.radioButton .ant-radio-checked .ant-radio-inner {
+  background-color: #5e7381;
+}
+.remove-line-item {
+  background-color: #ed4d4d;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.add-line-item {
+  background-color: #2e6de3;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.invoice-form-container button:hover {
+  background-color: #28622b;
+}
